@@ -19,3 +19,12 @@ def canon(document):
 
 hp("text.doc")
 canon("document.txt")
+def canon(document):
+    print(f"Printing: {document}")
+
+
+hp("text.doc")
+canon("document.txt")
+
+a = hp
+print(hp)
