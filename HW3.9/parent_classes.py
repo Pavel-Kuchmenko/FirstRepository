@@ -1,3 +1,4 @@
+
 class Device:
     def __init__(self, name : str, price : float, 
                  release_year : int, power : int,
@@ -32,3 +33,27 @@ class Device:
     @property
     def material(self):
         return self.__material
+
+
+class Money:
+    def __init__(self, name : str, amount : int) -> None:
+        self.__name = name
+        self.__amount = amount
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, value):
+        if isinstance(value, str):
+            self.__name = value
+
+    @property
+    def amount(self):
+        return self.__amount
+
+    @amount.setter
+    def amount(self, value):
+        if isinstance(value, int):
+            self.__amount = value
